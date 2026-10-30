@@ -1,0 +1,72 @@
+﻿# Game profile of EA SPORTS FC 27 (Switch). Bring-up profile of the research branch:
+# identity, module list, memory and rewriter facts are from the extracted containers;
+# shader key/PSO tables are included; derived runtime tables are generated locally.
+# Historical bring-up evidence is in docs/research/fc27-bringup.md.
+#
+# EA's Frostbite engine on SDK 22.2.0 (the sdk module names NintendoSdk_nnSdk-22_2_0 and
+# NintendoSDK_NVN-22_2_0), NVN. The game data lives in .toc / .cas pairs under Data/NX and
+# Patch/NX. main is 221 MB of image (185.6 MB of text) with ZBIC-compressed segments, so the
+# rewriter needs two patch areas (patch_nso.py BIG_TEXT): one before the base and one after
+# the image, because no single AArch64 B reaches across 185.6 MB of text.
+#
+# Base and update carry different mains (c2a25633… / 9636bcd6…): the update is the one the
+# game ships as its current version, the base row is kept because the base-only boot is the
+# comparison baseline (docs/research/fc27-input-integrity-audit.md).
+
+# ---- Identity ----
+title_id	0100C49025D3E000
+program_id	0100C49025D3E000
+
+# ---- App ----
+name	EA SPORTS FC 27
+app_name	EA SPORTS FC 27
+ipa	EASportsFC27.ipa
+app_category	public.app-category.sports-games
+# a football game: both sticks, a D-pad and the four face buttons
+pad_layout	full
+
+# ---- Versions ----
+# base game (CNMT v0, NACP 1.0.0) and update (CNMT v327680, NACP display string 1.8c.fd45 as stored)
+build	v0	1.0.0	main=c2a256339b29922415331fab57de2565	sdk=fed212d6e0963706f9f4b16ea5d65879
+build	v327680	1.8c.fd45	main=9636bcd68e2ef2c863194d76f308c98c	sdk=fed212d6e0963706f9f4b16ea5d65879
+package	v327680
+
+# ---- Files ----
+# rtld is replaced by the host; no subsdk0 exists in either ExeFS
+modules	main sdk
+romfs_marker	Data/NX/fc/fcgame/fcgame.toc
+# The container's own data files are never bundled (external mode), so the only files the
+# packer could waste time on are the Metal libraries: they are already compressed.
+zip_store	.metallib
+
+# ---- Graphics ----
+graphics_api	nvn
+# 60 fps is experimental; applied at launch, only to the verified update build.
+fps_target	30
+
+# ---- Memory ----
+# The NPDM declares a 6 MiB system resource (main.npdm META +0x14), so virtual address memory
+# is enabled (hle_svc.c GetInfo). Guest address-space partition is measured, not copied: see
+# docs/research/fc27-bringup.md section 20.
+#
+# Frostbite asks VammManager for its virtual address memory in regions of 512 MB and less
+# (main+0x17f9884: 661 regions live after a full match, 3.03 GiB reserved, 1.30 GiB of them
+# mapped, packed up to the alias region's end). With the SDK 22.2.0 node area cut to 62 MB
+# (sdk_patches.py) the regions need 3.5 GiB of alias region, and a request that fails is fatal
+# to the engine (it writes through a null pointer at main+0x17f98c4, "Couldn't reserve
+# memory"): 3.375 GiB dies 4 s after boot, 3.5 GiB boots and plays. SetHeapSize asks for
+# 1.1875 GB (pool − used − 1.75 GB of virtual address memory); the guest thread stacks use
+# 5 MiB of their region across 43 threads.
+#
+# 5.03 GiB in all: 16 MB of prefix, the 3.75 GiB alias region (0.25 GiB of margin over the
+# 3.5 GiB measured), 64 MiB of stacks and a 1.25 GiB heap region.
+mem_reserve	0x142000000
+mem_prefix	0x1000000
+mem_alias	0xF0000000
+mem_stack	0x4000000
+app_pool	0xCD500000
+# main alone maps 16 MB (first patch area) + 233.5 MB (image incl. bss and key page) + the
+# second patch area after the image; sdk adds about 12 MB. SetHeapSize checks the request
+# against the loaded modules, so the used-memory figure has to cover them.
+mem_used	0x12000000
+sys_resource	0x600000

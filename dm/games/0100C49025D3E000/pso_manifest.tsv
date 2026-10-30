@@ -1,0 +1,2 @@
+﻿# Prewarm seed list (shipped in the app, next to shader_map.tsv). Rows: S<TAB>shader key<TAB>stage / R<TAB>render pipeline key (pso_skey hex) / C<TAB>compute shader key.
+# Empty: the Mac runs of section 18 built their pipelines on demand and the host recorded them in pso_user.tsv beside the save; a seed recorded there (1286 rows) is left out for now, since prewarming that many states is a background cost the first iOS session has not been measured with. Row order = first-use order; do not sort.

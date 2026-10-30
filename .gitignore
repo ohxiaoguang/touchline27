@@ -1,0 +1,111 @@
+# Default build outputs (explicit paths and toolchain caches may live elsewhere)
+build/
+*.dSYM/
+.iosdd/
+.iosdd_*/
+.gui-build/
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+
+# Local machine configuration and work directories
+*_work/
+*-work/
+*_build/
+*_survey/
+/dm/host/gen/
+/dm/host/dmhost
+/dm/host/tests/build/
+/dm/gfx/tests/build/
+/dm/resource/tests/build/
+
+# Game containers, keys and extracted game code: never commit these
+*.nsp
+*.xci
+*.nsz
+*.ncz
+*.xcz
+*.nca
+*.nso
+*.nro
+*.tik
+*.keys
+*.keys.*
+*.key
+*keys*.private.json
+prod.keys
+RomFS/
+romfs/
+ExeFS/
+exefs/
+save/
+saves/
+
+# Rewritten modules and their tables (built from the user's own game files)
+*.patched.bin
+*.fixups.tsv
+*.gates.tsv
+*.cuts.tsv
+*.obs.tsv
+*.sites.tsv
+nro.tsv
+build_src.sha256
+
+# Shader dumps, packs and compiled libraries: the game's bytes, or derived from them
+*.metallib
+*.air
+*_b.metal
+*_bv.metal
+*_bf.metal
+*_bu.metal
+*.bin
+*.ctl
+*.code
+*.stg
+*.dump
+*.trace
+*.gputrace
+*.capture
+*.memdump
+*.raw
+*.pcm
+*.log
+gpu-dumps/
+
+# Runtime tables derived from a Shader library (the build regenerates them)
+dm/games/*/c1_full.tsv
+dm/games/*/cb_extent.tsv
+dm/games/*/dmsh_chain.h
+
+# Artifacts
+*.app/
+*.ipa
+*.entitlements
+*.mobileprovision
+*.dmg
+
+# Signing identities and local compiler/debug outputs
+*.p12
+*.pfx
+*.cer
+*.p8
+*.pem
+*.o
+*.a
+*.dylib
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.crash
+*.ips
+*.core
+
+# Research game images and translator debug symbols excluded from publication
+/docs/images/fifa27-*.png
+/docs/images/fifa27-*.jpg
+/dm/gfx/tools/dmsh_xlate_bin/dmsh_xlate.pdb

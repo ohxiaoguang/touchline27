@@ -1,0 +1,3 @@
+# Answer table: empty. The answers to the translator's queries (texture dimension types, attribute component types,
+# fragment output types, compute thread group) come from the game's own data through shader_split.py, which cannot read
+# the Frostbite archives yet, so every query is answered with the tool default and the build lists those shaders.

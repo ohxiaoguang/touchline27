@@ -1,0 +1,606 @@
+{
+  "audit_date": "2026-10-30",
+  "method": "Static inspection only; no binary execution or compilation",
+  "files": [
+    {
+      "file": "Gommon.dll",
+      "package": "Gommon",
+      "version": "2.8.1.2",
+      "member": "lib/net9.0/Gommon.dll",
+      "sha256": "1648a882b8986d660e8e0063445c41abb0641fe57edc49143af165c3f00f2bd7",
+      "package_sha256": "b49743299beed3613c5e3a2802f4454ce3028ec7bec3c04254ec2c210e4ad338",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/gommon/2.8.1.2/gommon.2.8.1.2.nupkg"
+    },
+    {
+      "file": "Humanizer.dll",
+      "package": "Humanizer.Core",
+      "version": "3.0.10",
+      "member": "lib/net10.0/Humanizer.dll",
+      "sha256": "2769ed8265b691a5482c72506ed274dc52446fa1641997a8c12c66f5b9263d39",
+      "package_sha256": "99f95210d8c3a1fd40bfd33d44b18441c97857891e55f1f7a88c72feec49e851",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core/3.0.10/humanizer.core.3.0.10.nupkg"
+    },
+    {
+      "file": "Microsoft.IO.RecyclableMemoryStream.dll",
+      "package": "Microsoft.IO.RecyclableMemoryStream",
+      "version": "3.0.1",
+      "member": "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll",
+      "sha256": "631a5fc41df9498d032c0655ebd0e1209430ccffbec55667d89c2566b338ccc0",
+      "package_sha256": "ba7160ff911c53f5ca25ba1be06b500b8dd87608b95637811acee17e18f8118a",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/microsoft.io.recyclablememorystream/3.0.1/microsoft.io.recyclablememorystream.3.0.1.nupkg"
+    },
+    {
+      "file": "MsgPack.dll",
+      "package": "MsgPack.Cli",
+      "version": "1.0.1",
+      "member": "lib/netstandard2.0/MsgPack.dll",
+      "sha256": "c7fe37ad67035bffbb634a497847a94496b96de755d42bbce1a3518cac0dd889",
+      "package_sha256": "19fd0477d5c71f8a05a49224ce183fc610d5a5e9ee9d2a25eb9a9af0865e62b6",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/msgpack.cli/1.0.1/msgpack.cli.1.0.1.nupkg"
+    },
+    {
+      "file": "Ryujinx.Common.dll",
+      "sha256": "2a02559c07d4935aacb63edefbd5c7433e06a0817b550ca72a94cc286a5d8376",
+      "source": "dm/third_party/ryujinx/src/Ryujinx.Common",
+      "verification": "assembly identity matches project; SHA-256 prefix matches dmsh_chain.lock; full binary/source equivalence not reproduced",
+      "license": "MIT; existing nxnative/Ryujinx/Spv source notices"
+    },
+    {
+      "file": "Ryujinx.Graphics.Shader.dll",
+      "sha256": "48fafbf9b0d912bd374ae2b306239d12d8eed4f539499e4b96e8ef3dac8925b3",
+      "source": "dm/third_party/ryujinx/src/Ryujinx.Graphics.Shader",
+      "verification": "assembly identity matches project; SHA-256 prefix matches dmsh_chain.lock; GLSL embedded resources checked against vendored source; full binary/source equivalence not reproduced",
+      "license": "MIT; existing nxnative/Ryujinx/Spv source notices"
+    },
+    {
+      "file": "Spv.Generator.dll",
+      "sha256": "b331450d46039db04426f6a6f9a2ee816fcbd4923ca32a54b7fd6360b37a575a",
+      "source": "dm/third_party/ryujinx/src/Spv.Generator",
+      "verification": "assembly identity matches project reference; source present; full binary/source equivalence not reproduced",
+      "license": "MIT; existing nxnative/Ryujinx/Spv source notices"
+    },
+    {
+      "file": "System.CodeDom.dll",
+      "package": "System.CodeDom",
+      "version": "4.4.0",
+      "member": "lib/netstandard2.0/System.CodeDom.dll",
+      "sha256": "5aec78c69334fc1cd1c926f4a9c857260dd2e03ff1739e96def1d68296b86b8b",
+      "package_sha256": "2f5c72b2927ca4324d54f60a97e14c19fe19c26d2d96ab40c9008d5baa53ebfd",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/system.codedom/4.4.0/system.codedom.4.4.0.nupkg"
+    },
+    {
+      "file": "af/Humanizer.resources.dll",
+      "package": "Humanizer.Core.af",
+      "version": "3.0.10",
+      "member": "lib/net10.0/af/Humanizer.resources.dll",
+      "sha256": "115ee554aa53782a3c502d84e355eb7a9e6250bd56c90d8f7c98163ec67e422b",
+      "package_sha256": "c464e6afdcaa319d648f07df9e874213c2a6fed7e5cce5269b0e573dcabceb9c",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.af/3.0.10/humanizer.core.af.3.0.10.nupkg"
+    },
+    {
+      "file": "ar/Humanizer.resources.dll",
+      "package": "Humanizer.Core.ar",
+      "version": "3.0.10",
+      "member": "lib/net10.0/ar/Humanizer.resources.dll",
+      "sha256": "6ae817931f6d8c64f49f7eca97b45dee5f43956de6173a499893498dcfd2d38e",
+      "package_sha256": "d47df0670a69832b7743dc17743be283fc124d881056d953e39778814e54a443",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.ar/3.0.10/humanizer.core.ar.3.0.10.nupkg"
+    },
+    {
+      "file": "az/Humanizer.resources.dll",
+      "package": "Humanizer.Core.az",
+      "version": "3.0.10",
+      "member": "lib/net10.0/az/Humanizer.resources.dll",
+      "sha256": "f51119e88bb3670099f2a96bf9a66c78a89b338a91cdcc6e228d56b3a044e0c0",
+      "package_sha256": "24258432bb295e2134cdfbd4b591f11ee2f3a38eb59ad5d999cb771218281c71",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.az/3.0.10/humanizer.core.az.3.0.10.nupkg"
+    },
+    {
+      "file": "bg/Humanizer.resources.dll",
+      "package": "Humanizer.Core.bg",
+      "version": "3.0.10",
+      "member": "lib/net10.0/bg/Humanizer.resources.dll",
+      "sha256": "0c1d79078874928f9d6af55814afa2901cced5584cbf54d6c3a9ef017ce4b579",
+      "package_sha256": "bd2ce956f4865ca766b15bfbe39ed6b031445b4374bd5338df47611d19eccfb3",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.bg/3.0.10/humanizer.core.bg.3.0.10.nupkg"
+    },
+    {
+      "file": "bn/Humanizer.resources.dll",
+      "package": "Humanizer.Core.bn",
+      "version": "3.0.10",
+      "member": "lib/net10.0/bn/Humanizer.resources.dll",
+      "sha256": "fd7e26b514107e023fcbf1b5ecd60fae100ccdfd0339ae67ad34322a5b1390c0",
+      "package_sha256": "bc99225d27ce1d747d896d751a593abd171289e77eb5113131c825dffe9d443a",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.bn/3.0.10/humanizer.core.bn.3.0.10.nupkg"
+    },
+    {
+      "file": "ca/Humanizer.resources.dll",
+      "package": "Humanizer.Core.ca",
+      "version": "3.0.10",
+      "member": "lib/net10.0/ca/Humanizer.resources.dll",
+      "sha256": "3bf812f8ab2e7dd0cccd72f45bdb3731c788b46de38a695020dd29dda41dbc1b",
+      "package_sha256": "49efc101027666212a197e8c8e5bbc0707c731d632386c049d3c868eae7edaf0",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.ca/3.0.10/humanizer.core.ca.3.0.10.nupkg"
+    },
+    {
+      "file": "cs/Humanizer.resources.dll",
+      "package": "Humanizer.Core.cs",
+      "version": "3.0.10",
+      "member": "lib/net10.0/cs/Humanizer.resources.dll",
+      "sha256": "9e84210a062691e9efbbbc36299c0c534d872df72a59ab573ea156b950e08d8f",
+      "package_sha256": "8da5c481e5dd7b071cebe4dcd377432b6dd3726c488d3c76102769eebb20c8e7",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.cs/3.0.10/humanizer.core.cs.3.0.10.nupkg"
+    },
+    {
+      "file": "da/Humanizer.resources.dll",
+      "package": "Humanizer.Core.da",
+      "version": "3.0.10",
+      "member": "lib/net10.0/da/Humanizer.resources.dll",
+      "sha256": "9688d8caf50a5be0819e66a65f3344daed3f330455a42100e1a263788c16399c",
+      "package_sha256": "86d8f3548cc49fbbfceb3b7f66b5780f5902e57726e138d0a1b6e238206a3631",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.da/3.0.10/humanizer.core.da.3.0.10.nupkg"
+    },
+    {
+      "file": "de/Humanizer.resources.dll",
+      "package": "Humanizer.Core.de",
+      "version": "3.0.10",
+      "member": "lib/net10.0/de/Humanizer.resources.dll",
+      "sha256": "cabfd8bd9fe8841f29b4b29a8cb3fab825d6678d596bb798c7f24d5eec9e6301",
+      "package_sha256": "b0e8d9065af5f2896c747d5d58ead54b3341868a6a5c1bc5ec30144b769049ea",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.de/3.0.10/humanizer.core.de.3.0.10.nupkg"
+    },
+    {
+      "file": "dmsh_xlate",
+      "sha256": "f534c3370b84833fd1a4c75ea37b7ffb8d8e68dbc91adae6e1c4b8894d5db381",
+      "package": "Microsoft.NETCore.App.Host.osx-arm64",
+      "version": "10.0.13",
+      "runtime_source_commit": "4099f83977f4d29604a9aeb971fb0a7bc1d5f699",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.host.osx-arm64/10.0.13/microsoft.netcore.app.host.osx-arm64.10.0.13.nupkg",
+      "package_sha256": "629ee6c59be0d9746643afe6007f4d2a5a8435613931079c5759d103ff037288",
+      "sdk_template_sha256": "c5200056995c1efd7465cefe2d4ce3df6d42674baf68fec482f1e63ef492cff2",
+      "verification": "byte-identical to installed .NET 10.0.13 SDK apphost after normalizing application-name field, __LINKEDIT sizes and code signature; not byte-identical to NuGet apphost build",
+      "license": "MIT plus accompanying original third-party notices"
+    },
+    {
+      "file": "dmsh_xlate.dll",
+      "sha256": "80132fec3fc716dfde6fb066abb3a222666f1c303ef71358e71fabce274988d9",
+      "source": "dm/gfx/tools/dmsh_xlate",
+      "verification": "embedded src0/src1 byte-identical to current Program.cs/csproj; SHA-256 prefix matches dmsh_chain.lock",
+      "license": "MIT; existing nxnative/Ryujinx/Spv source notices"
+    },
+    {
+      "file": "el/Humanizer.resources.dll",
+      "package": "Humanizer.Core.el",
+      "version": "3.0.10",
+      "member": "lib/net10.0/el/Humanizer.resources.dll",
+      "sha256": "652e758c1ceb61d471cf8ee4ca09568400323124e5403748a829715836ed2069",
+      "package_sha256": "51f5428d1bec5abc28378440257571fb9224d2f961dd4a99d5af25346d0c426a",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.el/3.0.10/humanizer.core.el.3.0.10.nupkg"
+    },
+    {
+      "file": "es/Humanizer.resources.dll",
+      "package": "Humanizer.Core.es",
+      "version": "3.0.10",
+      "member": "lib/net10.0/es/Humanizer.resources.dll",
+      "sha256": "d7ad03cd07e01e497b1ad43da027d79ff4281a92ddd3529c74f1c67922952a73",
+      "package_sha256": "a169adc0c5d9a2998b91f6cfe00f0a765879476d1fde35d1b14e1158df29494b",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.es/3.0.10/humanizer.core.es.3.0.10.nupkg"
+    },
+    {
+      "file": "fa/Humanizer.resources.dll",
+      "package": "Humanizer.Core.fa",
+      "version": "3.0.10",
+      "member": "lib/net10.0/fa/Humanizer.resources.dll",
+      "sha256": "36a647b0bcf38242906e92abc4b0159e30bd7094a62b4c258f788184395d98df",
+      "package_sha256": "838c510469afd9516107340689545d83d3a7a506c0118b7db04600d84e290a3a",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.fa/3.0.10/humanizer.core.fa.3.0.10.nupkg"
+    },
+    {
+      "file": "fi/Humanizer.resources.dll",
+      "package": "Humanizer.Core.fi",
+      "version": "3.0.10",
+      "member": "lib/net10.0/fi/Humanizer.resources.dll",
+      "sha256": "540d0561305e1bdf69f8ad7d879567584d3f93de1a07450243f9f52f96106afd",
+      "package_sha256": "11db525ec2f4b4bedc461cb5bd6f993d0904043122875357c4e5398e562e2675",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.fi/3.0.10/humanizer.core.fi.3.0.10.nupkg"
+    },
+    {
+      "file": "fil/Humanizer.resources.dll",
+      "package": "Humanizer.Core.fil",
+      "version": "3.0.10",
+      "member": "lib/net10.0/fil/Humanizer.resources.dll",
+      "sha256": "d0f7be4976ac88b9753caf74c67c5107a3d5a267a891ca1614f7de9feb96b11c",
+      "package_sha256": "c698acd643504019a1f38fdbd28c22ce72fd6cc76e6f3cdcb64894c69c16280a",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.fil/3.0.10/humanizer.core.fil.3.0.10.nupkg"
+    },
+    {
+      "file": "fr/Humanizer.resources.dll",
+      "package": "Humanizer.Core.fr",
+      "version": "3.0.10",
+      "member": "lib/net10.0/fr/Humanizer.resources.dll",
+      "sha256": "e28bfd43f81b2cba939c01659af5bbc7f20e236a52bdd072439f5e4de4ddebda",
+      "package_sha256": "e3e257baf0a8455d6500afbadb5409dad356459d1dad453c3e1fa14039b8e3af",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.fr/3.0.10/humanizer.core.fr.3.0.10.nupkg"
+    },
+    {
+      "file": "he/Humanizer.resources.dll",
+      "package": "Humanizer.Core.he",
+      "version": "3.0.10",
+      "member": "lib/net10.0/he/Humanizer.resources.dll",
+      "sha256": "80d2e32ac0b6c69371063ea62891c56fcff0c04d5b1a1c8cf147ed3fac7810e1",
+      "package_sha256": "b393a5b18f7e5298df6d15916735ec5763531e34ae85968b508d3541c882d0c7",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.he/3.0.10/humanizer.core.he.3.0.10.nupkg"
+    },
+    {
+      "file": "hr/Humanizer.resources.dll",
+      "package": "Humanizer.Core.hr",
+      "version": "3.0.10",
+      "member": "lib/net10.0/hr/Humanizer.resources.dll",
+      "sha256": "24f86671d5b7039c7efdf22eb4fd1ed6f5997618773d74af844fd484ad5e5e7b",
+      "package_sha256": "5094ebb222d3133d15a1df4a57d568244ddaabc5e48b03b049c6dfc64baf9ac2",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.hr/3.0.10/humanizer.core.hr.3.0.10.nupkg"
+    },
+    {
+      "file": "hu/Humanizer.resources.dll",
+      "package": "Humanizer.Core.hu",
+      "version": "3.0.10",
+      "member": "lib/net10.0/hu/Humanizer.resources.dll",
+      "sha256": "724594b505d7fe7601385860e55f30254ef48a03242344b74e27ad068c5f06f6",
+      "package_sha256": "93b71db11c97d69271d8bb94b9ac4699059b2e4848584008543b7f8fbbd5946d",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.hu/3.0.10/humanizer.core.hu.3.0.10.nupkg"
+    },
+    {
+      "file": "hy/Humanizer.resources.dll",
+      "package": "Humanizer.Core.hy",
+      "version": "3.0.10",
+      "member": "lib/net10.0/hy/Humanizer.resources.dll",
+      "sha256": "2edc2ad20b715c11c868bf246a69dbfc6a6b2ee6048abdd1a3691472ff78b011",
+      "package_sha256": "f2b796bc711b8a021178f575830a38718cea7fd54784b6d78ab186bbbf3309ed",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.hy/3.0.10/humanizer.core.hy.3.0.10.nupkg"
+    },
+    {
+      "file": "id/Humanizer.resources.dll",
+      "package": "Humanizer.Core.id",
+      "version": "3.0.10",
+      "member": "lib/net10.0/id/Humanizer.resources.dll",
+      "sha256": "059bf6f470c2f37daed622dc579c57e95b7ff70b49fe7d9f61b028189befd94e",
+      "package_sha256": "5b5232e7a09a36132a61f95555ab9667d6cff25d23680b8d62edf3d10a2fcfc1",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.id/3.0.10/humanizer.core.id.3.0.10.nupkg"
+    },
+    {
+      "file": "is/Humanizer.resources.dll",
+      "package": "Humanizer.Core.is",
+      "version": "3.0.10",
+      "member": "lib/net10.0/is/Humanizer.resources.dll",
+      "sha256": "753f670c47b3e9e0e4f2c13b26b9661f9da96bd491f8953bf7d1f32861b1fa12",
+      "package_sha256": "519af4b007edcee52fa01b52f28269fe0d19e752726011a528ffc9a593a9527a",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.is/3.0.10/humanizer.core.is.3.0.10.nupkg"
+    },
+    {
+      "file": "it/Humanizer.resources.dll",
+      "package": "Humanizer.Core.it",
+      "version": "3.0.10",
+      "member": "lib/net10.0/it/Humanizer.resources.dll",
+      "sha256": "29ff9b2e8f9da87e78ccf35a25eff1f0f3a714ea3c37586c1a1e8fc44c35865a",
+      "package_sha256": "08ee9f11a712693f5152e2925326c3314de590f15af811f13561bfaa2290a7a1",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.it/3.0.10/humanizer.core.it.3.0.10.nupkg"
+    },
+    {
+      "file": "ja/Humanizer.resources.dll",
+      "package": "Humanizer.Core.ja",
+      "version": "3.0.10",
+      "member": "lib/net10.0/ja/Humanizer.resources.dll",
+      "sha256": "9b7f302967f4c99c07b7b8f6e591703757507c80d19031be5e8a782969c9dc48",
+      "package_sha256": "7d9b995b6994e9b5b22827bb85cdc70928f3fb38cf00115c1448fa3800f37e56",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.ja/3.0.10/humanizer.core.ja.3.0.10.nupkg"
+    },
+    {
+      "file": "ko/Humanizer.resources.dll",
+      "package": "Humanizer.Core.ko",
+      "version": "3.0.10",
+      "member": "lib/net10.0/ko/Humanizer.resources.dll",
+      "sha256": "09214a51f70d39fc90a05c8f3addf14888609dac9e41fe33985fc83669cc58c6",
+      "package_sha256": "64d844bef4aecb45911c67ed221afadbea402a49b3b034f6e9290b8fd9b16315",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.ko/3.0.10/humanizer.core.ko.3.0.10.nupkg"
+    },
+    {
+      "file": "ku/Humanizer.resources.dll",
+      "package": "Humanizer.Core.ku",
+      "version": "3.0.10",
+      "member": "lib/net10.0/ku/Humanizer.resources.dll",
+      "sha256": "9c7f9cc7339b556d81609ba745209fe0a420cc0288296098f9c05ce5d8560619",
+      "package_sha256": "9b50198dad06d121098aeacb4c991f62f8b9a5242d99bbe9086ed27dd9ae53ce",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.ku/3.0.10/humanizer.core.ku.3.0.10.nupkg"
+    },
+    {
+      "file": "lb/Humanizer.resources.dll",
+      "package": "Humanizer.Core.lb",
+      "version": "3.0.10",
+      "member": "lib/net10.0/lb/Humanizer.resources.dll",
+      "sha256": "26704bbe0fef9a40dde7177310f6f827115fc1be2ea461d8e1b8d3e2620b9202",
+      "package_sha256": "e8a61926b0d05231d96329f9fd652d7f21bcfea967228a2a6c7a10f64183c980",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.lb/3.0.10/humanizer.core.lb.3.0.10.nupkg"
+    },
+    {
+      "file": "lt/Humanizer.resources.dll",
+      "package": "Humanizer.Core.lt",
+      "version": "3.0.10",
+      "member": "lib/net10.0/lt/Humanizer.resources.dll",
+      "sha256": "3754325b7576d37fb092fec288f4fe01dba97afc4ff1af9d1cc53a6ac4d1f4f1",
+      "package_sha256": "0630e1dc48df12060514844b3ccbe90b4f2cf201ec1d854c56451fcc6d1c56a2",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.lt/3.0.10/humanizer.core.lt.3.0.10.nupkg"
+    },
+    {
+      "file": "lv/Humanizer.resources.dll",
+      "package": "Humanizer.Core.lv",
+      "version": "3.0.10",
+      "member": "lib/net10.0/lv/Humanizer.resources.dll",
+      "sha256": "69e93ce4287cda90b6a1bd83314d66d959d3dccd16ebfaf4cd8f4226121c092b",
+      "package_sha256": "a3f00c889baceef538ea9d58cdab11a5e798c757cfc3a8ac52977710b3945cd9",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.lv/3.0.10/humanizer.core.lv.3.0.10.nupkg"
+    },
+    {
+      "file": "ms/Humanizer.resources.dll",
+      "package": "Humanizer.Core.ms",
+      "version": "3.0.10",
+      "member": "lib/net10.0/ms/Humanizer.resources.dll",
+      "sha256": "8bb27f42dfb37cc2784ed179b8d37ec0140681e5e46ebeca28889c59763bda6b",
+      "package_sha256": "0970a77d40c6d10d27b5807f79981cf2c39d1a548616bcacbe850a4eb42604bc",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.ms/3.0.10/humanizer.core.ms.3.0.10.nupkg"
+    },
+    {
+      "file": "mt/Humanizer.resources.dll",
+      "package": "Humanizer.Core.mt",
+      "version": "3.0.10",
+      "member": "lib/net10.0/mt/Humanizer.resources.dll",
+      "sha256": "57f3e59fd47e0307360a35d146afa415f031b1027218fbeea378d8d1dddf5ef7",
+      "package_sha256": "d8bedcdb9383eea5a835676bda57bb7f3842f3b8b4f98d93cf0bfec87e1f1d90",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.mt/3.0.10/humanizer.core.mt.3.0.10.nupkg"
+    },
+    {
+      "file": "nb/Humanizer.resources.dll",
+      "package": "Humanizer.Core.nb",
+      "version": "3.0.10",
+      "member": "lib/net10.0/nb/Humanizer.resources.dll",
+      "sha256": "05ab92986dd287872ec51e6d5472254fbebfb7692d39e833ae5434afda73620a",
+      "package_sha256": "ca76825898aee72dc1e4b7a22d0aefb2742b98455abd8bdf78a28ca73599e9fc",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.nb/3.0.10/humanizer.core.nb.3.0.10.nupkg"
+    },
+    {
+      "file": "nl/Humanizer.resources.dll",
+      "package": "Humanizer.Core.nl",
+      "version": "3.0.10",
+      "member": "lib/net10.0/nl/Humanizer.resources.dll",
+      "sha256": "0df76e8a85c0e043a78207b763a5f6ff0fe71f7b98625af59deaf6f5c0cac24d",
+      "package_sha256": "cbf65512c0f3cfd10c097b894999f4315a257fa4ea214e16932e9bc9d3768be5",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.nl/3.0.10/humanizer.core.nl.3.0.10.nupkg"
+    },
+    {
+      "file": "pl/Humanizer.resources.dll",
+      "package": "Humanizer.Core.pl",
+      "version": "3.0.10",
+      "member": "lib/net10.0/pl/Humanizer.resources.dll",
+      "sha256": "61411f7116cf0ddf06231eb0fea2aa4b7f7fed33f9d6616a5301e589e42735f5",
+      "package_sha256": "af70e29f73176a80858f8df5795f9600e65446fbba0f85f4b5de4705a3164c68",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.pl/3.0.10/humanizer.core.pl.3.0.10.nupkg"
+    },
+    {
+      "file": "pt-BR/Humanizer.resources.dll",
+      "package": "Humanizer.Core.pt-BR",
+      "version": "3.0.10",
+      "member": "lib/net10.0/pt-BR/Humanizer.resources.dll",
+      "sha256": "a602f1beb3b60d86f54c80e9f2ff462394f51268d2e26826560f9d3f7e59f42e",
+      "package_sha256": "3ebb954e9a9745f91594e9b6a69eeb3caf0bf3d4bdf6a1fe18e5d2d187feba90",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.pt-br/3.0.10/humanizer.core.pt-br.3.0.10.nupkg"
+    },
+    {
+      "file": "pt/Humanizer.resources.dll",
+      "package": "Humanizer.Core.pt",
+      "version": "3.0.10",
+      "member": "lib/net10.0/pt/Humanizer.resources.dll",
+      "sha256": "f8756a21e4ce373e85b5f6b56c5fdb93c323e167f9d86487c17cebd4ca0ba71c",
+      "package_sha256": "ed0ae8cf4607f1779ebfaf69495c282011c0c0fc47d09d3dcf9e9a9d9ca8d731",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.pt/3.0.10/humanizer.core.pt.3.0.10.nupkg"
+    },
+    {
+      "file": "ro/Humanizer.resources.dll",
+      "package": "Humanizer.Core.ro",
+      "version": "3.0.10",
+      "member": "lib/net10.0/ro/Humanizer.resources.dll",
+      "sha256": "93e670023d105dec3d125eda6f493b909260562104addda42d38c711dde407e4",
+      "package_sha256": "90fef36bb2580e3b5963a2a9e68263b0bb13123d0c00ce2a78ae3a66a85116d4",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.ro/3.0.10/humanizer.core.ro.3.0.10.nupkg"
+    },
+    {
+      "file": "ru/Humanizer.resources.dll",
+      "package": "Humanizer.Core.ru",
+      "version": "3.0.10",
+      "member": "lib/net10.0/ru/Humanizer.resources.dll",
+      "sha256": "a366c0d1b8f6fbf76bd1ca791b1b1a1959cc36b872fb6bd3bc640626cb18aa59",
+      "package_sha256": "2743cafa9bbaa3e62ba171347b6d0ef46e25108806043749208ebdd85c4b664d",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.ru/3.0.10/humanizer.core.ru.3.0.10.nupkg"
+    },
+    {
+      "file": "sk/Humanizer.resources.dll",
+      "package": "Humanizer.Core.sk",
+      "version": "3.0.10",
+      "member": "lib/net10.0/sk/Humanizer.resources.dll",
+      "sha256": "417b566efaa08d450ed767a0a1ebf7d4ece95c72401ac46fb53abda9154acded",
+      "package_sha256": "351700c85bbaae2b07838f10f5f52eb243da143e9499763612060d82c8a4a9da",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.sk/3.0.10/humanizer.core.sk.3.0.10.nupkg"
+    },
+    {
+      "file": "sl/Humanizer.resources.dll",
+      "package": "Humanizer.Core.sl",
+      "version": "3.0.10",
+      "member": "lib/net10.0/sl/Humanizer.resources.dll",
+      "sha256": "8fe388b24c9b333d3504878f11571fba14aa8dc939fb7700bb309efc89744671",
+      "package_sha256": "f8e44a531b90d0c5780e95634d08d3f6e29227f0f20eee9be371b7ae74a27a1c",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.sl/3.0.10/humanizer.core.sl.3.0.10.nupkg"
+    },
+    {
+      "file": "sr-Latn/Humanizer.resources.dll",
+      "package": "Humanizer.Core.sr-Latn",
+      "version": "3.0.10",
+      "member": "lib/net10.0/sr-Latn/Humanizer.resources.dll",
+      "sha256": "6460cc60d6a0bf07856e869958d421dca02de1c82453ad70cab9709fe9b58433",
+      "package_sha256": "edb9d063146298e8624320e7cdf622af855884e559b4e351f7724541b94f8197",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.sr-latn/3.0.10/humanizer.core.sr-latn.3.0.10.nupkg"
+    },
+    {
+      "file": "sr/Humanizer.resources.dll",
+      "package": "Humanizer.Core.sr",
+      "version": "3.0.10",
+      "member": "lib/net10.0/sr/Humanizer.resources.dll",
+      "sha256": "89283af7732c84135763bb1bb3cdcedd6cf2296ccd0c4a105e70a2ab9aed759c",
+      "package_sha256": "7fed2e5f687ca705a32efbb847440ed7ca6aec6a9541f58c6acacf29c0c4d1bb",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.sr/3.0.10/humanizer.core.sr.3.0.10.nupkg"
+    },
+    {
+      "file": "sv/Humanizer.resources.dll",
+      "package": "Humanizer.Core.sv",
+      "version": "3.0.10",
+      "member": "lib/net10.0/sv/Humanizer.resources.dll",
+      "sha256": "087c94db842c91a314f65a07d8de25522d373c0206673503c1ebcc9a2c8e47ae",
+      "package_sha256": "ca51f1bd6d4813225d0492e9cb23f2f550fbf750e63b7eddde3ea8c1b4d5490f",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.sv/3.0.10/humanizer.core.sv.3.0.10.nupkg"
+    },
+    {
+      "file": "th/Humanizer.resources.dll",
+      "package": "Humanizer.Core.th",
+      "version": "3.0.10",
+      "member": "lib/net10.0/th/Humanizer.resources.dll",
+      "sha256": "e234162be204c34623762a00c2712c009fac2196cfd651a287b6734043daf80a",
+      "package_sha256": "c096cb843c81b12c5cf21965ecba38a7ed7fe9020520596ba6eb4c5f61ac24af",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.th/3.0.10/humanizer.core.th.3.0.10.nupkg"
+    },
+    {
+      "file": "tr/Humanizer.resources.dll",
+      "package": "Humanizer.Core.tr",
+      "version": "3.0.10",
+      "member": "lib/net10.0/tr/Humanizer.resources.dll",
+      "sha256": "1b6eae721ec8a59c9f5f41370cebba49080289d8fa95622af440a1516373a5ff",
+      "package_sha256": "77392e96c290f93bb27de90d741a9e9f78500ab1ca8c5fe6ffc47315426ff2ca",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.tr/3.0.10/humanizer.core.tr.3.0.10.nupkg"
+    },
+    {
+      "file": "uk/Humanizer.resources.dll",
+      "package": "Humanizer.Core.uk",
+      "version": "3.0.10",
+      "member": "lib/net10.0/uk/Humanizer.resources.dll",
+      "sha256": "05c825c9d54a08d186771c079e921b81cdec7b9d5a40e56b5dbfaad01810654d",
+      "package_sha256": "81b45db84d7bcd4d55a5c1bf1d57a8be6357e2effbabec2c536265e79199ede7",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.uk/3.0.10/humanizer.core.uk.3.0.10.nupkg"
+    },
+    {
+      "file": "uz-Cyrl-UZ/Humanizer.resources.dll",
+      "package": "Humanizer.Core.uz-Cyrl-UZ",
+      "version": "3.0.10",
+      "member": "lib/net10.0/uz-Cyrl-UZ/Humanizer.resources.dll",
+      "sha256": "f11f093519448851ab242be4230b14b780a4c5689091161400939ceec83efd0c",
+      "package_sha256": "81a925b3f3fd3160e3ce5b62f95a4e1018810c8c43408edbb23d47e63232ca82",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.uz-cyrl-uz/3.0.10/humanizer.core.uz-cyrl-uz.3.0.10.nupkg"
+    },
+    {
+      "file": "uz-Latn-UZ/Humanizer.resources.dll",
+      "package": "Humanizer.Core.uz-Latn-UZ",
+      "version": "3.0.10",
+      "member": "lib/net10.0/uz-Latn-UZ/Humanizer.resources.dll",
+      "sha256": "dfe69eadce95c5daf3da54ce98f28776f596834d710809aaf888487fdb23f7f7",
+      "package_sha256": "1552cd5bb981d05aeba8d07613047f6e1932d526a3c6820c41fac3448df08ff1",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.uz-latn-uz/3.0.10/humanizer.core.uz-latn-uz.3.0.10.nupkg"
+    },
+    {
+      "file": "vi/Humanizer.resources.dll",
+      "package": "Humanizer.Core.vi",
+      "version": "3.0.10",
+      "member": "lib/net10.0/vi/Humanizer.resources.dll",
+      "sha256": "d4a354c464c5ea8f53777835587a7bcbc2c64904770a6f59233932fd6307b5ed",
+      "package_sha256": "a83b2beb1dae52715ba6b63a4cf798d94000650f4e146ae391d794417c861ff5",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.vi/3.0.10/humanizer.core.vi.3.0.10.nupkg"
+    },
+    {
+      "file": "zh-CN/Humanizer.resources.dll",
+      "package": "Humanizer.Core.zh-CN",
+      "version": "3.0.10",
+      "member": "lib/net10.0/zh-CN/Humanizer.resources.dll",
+      "sha256": "166b5339b0637ad15a4efaff767bd05f4c5fb0d6c842c64df98dc65d37d8a587",
+      "package_sha256": "697ff1124b386f4f8602e157b46b22a6bf8f6e931d977331877d3b107173ba35",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.zh-cn/3.0.10/humanizer.core.zh-cn.3.0.10.nupkg"
+    },
+    {
+      "file": "zh-Hans/Humanizer.resources.dll",
+      "package": "Humanizer.Core.zh-Hans",
+      "version": "3.0.10",
+      "member": "lib/net10.0/zh-Hans/Humanizer.resources.dll",
+      "sha256": "1e181e2b9ca93c8e8c1aa6ee0cc589f4b0e13ecad3b2a6637a9367f120f57e8d",
+      "package_sha256": "fac2bc8ad744c7bc3325b80a1d960b3b06e1faa3d8efd26eafe4db44e29ba770",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.zh-hans/3.0.10/humanizer.core.zh-hans.3.0.10.nupkg"
+    },
+    {
+      "file": "zh-Hant/Humanizer.resources.dll",
+      "package": "Humanizer.Core.zh-Hant",
+      "version": "3.0.10",
+      "member": "lib/net10.0/zh-Hant/Humanizer.resources.dll",
+      "sha256": "cf2af7b5a8689f887bdb16ce4cb0405b384353cb35e99a745099743526ff43c9",
+      "package_sha256": "660d0bb61c7d2ed5198100b26e5e51dea2ad4a5b9176b41dad595091151ccca1",
+      "verification": "byte-identical to NuGet package member",
+      "package_url": "https://api.nuget.org/v3-flatcontainer/humanizer.core.zh-hant/3.0.10/humanizer.core.zh-hant.3.0.10.nupkg"
+    }
+  ]
+}
